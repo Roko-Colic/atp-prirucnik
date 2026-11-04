@@ -1,16 +1,11 @@
 # Prvi koraci u terminalu
 
-<!-- Ovo je početna verzija (v0) za projekt P1.
-     Sve što je u [uglatim zagradama] zamijenite svojim tekstom.
-     Očekivane rezultate prepišite sa SVOJEG zaslona, ne izmišljajte ih.
-     Kad završite, ovaj komentar izbrišite. -->
-
-[Jedna ili dvije rečenice: što će čitatelj naučiti u ovom tutorialu i koliko otprilike traje.]
+U ovom tutorijalu, čitatelj će naučiti koristiti se terminalom u Visual Studio Codeu. Cijeli proces trebao bi trajati 30-45 minuta.
 
 ## Prije početka
 
-- [Na kojem operacijskom sustavu i u kojem terminalu radite? Npr. Windows 11 i Git Bash.]
-- Visual Studio Code je pokrenut, a u njemu je otvorena mapa [koja?].
+- Ovdje je terminal Git Bash na sustavu Windows 11.
+- Visual Studio Code je pokrenut, a u njemu je otvorena mapa Documents.
 
 ## 1. Otvorite terminal
 
@@ -18,7 +13,7 @@ U izborniku **Terminal** odaberite **New Terminal**.
 
 **Očekivani rezultat:** 
 
-```emper@DESKTOP-M720KVL UCRT64 ~
+```emper@DESKTOP-M720KVL UCRT64 ~/Documents
 $
 ```
 
@@ -30,7 +25,7 @@ pwd
 
 **Očekivani rezultat:** 
 
-```/c/Users/[Ime]
+```/c/Users/[Ime]/Documents
 ```
 
 ## 3. Napravite mapu i uđite u nju
@@ -42,7 +37,7 @@ pwd
 ```
 
 **Očekivani rezultat:** 
-```/c/Users/[Ime]/proba-terminala
+```/c/Users/[Ime]/Documents/proba-terminala
 ```
 
 ## 4. Napravite datoteku i upišite u nju tekst
@@ -52,7 +47,10 @@ echo "# Moje bilješke" > biljeske.md
 cat biljeske.md
 ```
 
-**Očekivani rezultat:** [Prepišite ispis.]
+**Očekivani rezultat:**
+
+```# Moje bilješke
+```
 
 ## 5. Dodajte još jedan redak
 
@@ -61,9 +59,13 @@ echo "- Naredba pwd ispisuje gdje se nalazim." >> biljeske.md
 cat biljeske.md
 ```
 
-**Očekivani rezultat:** [Prepišite ispis.]
+**Očekivani rezultat:** 
 
-[Jednom ili dvjema rečenicama objasnite čitatelju razliku između `>` i `>>`.]
+```# Moje bilješke
+- Naredba pwd ispisuje gdje se nalazim.
+```
+
+Jedan znak `>` prepisuje cijelu datoteku, dok `>>` samo dodaje tekst na kraj.
 
 ## 6. Kopirajte, preimenujte i izbrišite datoteku
 
@@ -74,9 +76,12 @@ rm stara.md
 ls
 ```
 
-**Očekivani rezultat:** [Što ispiše `ls`?]
+**Očekivani rezultat:** 
 
-[Upozorite čitatelja na ono što je važno znati prije naredbe `rm`.]
+```biljeske.md
+```
+
+Naredba `rm` trajno briše datoteku, te morate paziti da ne izbrišete nešto što će vam trebati kasnije.
 
 ## Ako ne radi
 
@@ -87,4 +92,4 @@ ls
 
 ## Što dalje
 
-[Gdje čitatelj može naučiti više? Npr. priručnik Srca *Uvod u Linux*, poglavlja 2 i 3.]
+Više možete saznati u priručniku Srca *Uvod u Linux*, poglavlja 2 i 3.
